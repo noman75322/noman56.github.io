@@ -1,0 +1,242 @@
+ /* General Global Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif; /* Professional, modern font */
+    background-color: #f8f9fa; /* Softer background color */
+    color: #333; /* Improved contrast */
+    line-height: 1.6;
+}
+
+h2 {
+    color: #2c3e50; /* Refined heading color */
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+section {
+    padding: 100px 50px;
+    border-bottom: 1px solid #ddd; /* Softer border */
+}
+
+/* Container Styles */
+.container,
+.about-container,
+.education-container,
+.resume-container,
+.skills-container,
+.projects-container,
+.achievement-container,
+.contact-container {
+    max-width: 2000px; /* Restrict maximum width */
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    margin-top: 30px;
+    border: 6px solid #00aaff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    object-fit: cover;
+}
+
+/* Name and Designation */
+.name {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin: 40px 0 20px;
+    font-weight: 900;
+}
+
+.designation {
+    color: #081a59; /* Subtle gray tone */
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+
+/* About Section */
+.about-container p {
+    font-size: 1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: auto;
+    color: #555;
+}
+
+/* Education Section */
+.education-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.education-logo {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.education-logo:hover {
+    transform: scale(1.1);
+}
+
+.education-details h3 {
+    margin: 10px 0;
+    color: #007bff; /* Highlighted blue */
+    font-size: 1.2rem;
+}
+
+/* Resume Button */
+.resume-btn {
+    background-color: #074e2e;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.resume-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.skill-item {
+    width: 120px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+}
+
+.skill-item img {
+    width: 60px;
+    height: auto;
+    margin: 10px auto;
+}
+
+/* Projects Section */
+.project-item {
+    margin-bottom: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Achievement Section */
+.achievement-item {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.achievement-item:hover {
+    transform: translateY(-5px);
+}
+
+.achievement-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Contact Section */
+.contact-container p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.contact-container a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-container a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+    margin-top: 30px;
+}
+
+.nav-buttons .btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    background-color: #0e4a05;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-buttons .btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Smooth Scrolling Effect */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Video Background */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    object-fit: cover; /* Maintain aspect ratio */
+}
